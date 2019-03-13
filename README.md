@@ -78,7 +78,7 @@ Após obter o Heap Dump do servidor, é a vez da ferramenta Eclipse Memory Analy
 
 ![Leak](https://user-images.githubusercontent.com/14164532/54299828-13214500-4592-11e9-921a-8e296eee5e0d.png)
 
-## Avaliando o Thread Dump em busca de problemas ===
+## Avaliando o Thread Dump em busca de problemas
 TODO
 
 
