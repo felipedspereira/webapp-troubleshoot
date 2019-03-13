@@ -5,7 +5,6 @@
 Este documento tem o objetivo de servir como material de apoio na depuração de problemas de lentidão encontrados em aplicações web escritas em Java.
 No decorrer deste texto, serão apresentados algumas soluções para monitoramento dos recursos de diversas parte de uma aplicação, tais como Pool de conexões, memória da aplicação, vazamento de memória, entre outros.
 
-
 * <b>Observação</b>: as configurações aqui apresentadas são relativas ao servidor de aplicação JBoss AS 7.x, porém, apesar de os principais servidores de aplicação do mercado apresentarem suas próprias formas de configuração, não deve fugir muito do que vai ser mostrado aqui.
 
 ## Monitorando a aplicação em Produção
@@ -13,8 +12,6 @@ Existem diversos aspectos que devem ser monitorados em uma aplicação que estej
 
 ### Pool de Conexões
 O pool de conexões é importantíssimo para o bom funcionamento de uma aplicação em produção. Basicamente, o pool de conexões representa um conjunto de conexões com o banco de dados que ficarão disponíveis exclusivamente para atender requisições da aplicação em questão. Esse pool de conexões, entre outros parâmetros, possui um número mínimo e máximo de conexões. 
-
-<br>
 
 Se o número máximo de conexões disponibilizadas para a aplicação for muito baixo, a aplicação pode começar a apresentar problemas de lentidão e até mesmo alto consumo de memória do servidor: se todas as conexões estão ocupadas, o servidor de aplicação começará a enfileirar as requisições em sua memória enquanto espera a disponibilização de uma conexão com o banco.
 
